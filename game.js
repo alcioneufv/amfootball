@@ -13,6 +13,7 @@ var game = new Phaser.Game(config);
 
 function preload() {
   this.load.image('field', 'assets/field.png');
+  this.load.spritesheet('PA', 'assets/playerA.png', { frameWidth: 90, frameHeight: 90 });
 }
 
 var cursors;
@@ -22,6 +23,9 @@ function create () {
     cursors = this.input.keyboard.createCursorKeys();
     
     this.add.image(0, 0, 'field').setOrigin(0, 0);
+  
+    pA = this.physics.add.sprite(10, 270, 'PA').setOrigin(0, 0);
+    pA.setCollideWorldBounds(true);
 }
 
 function update (){
