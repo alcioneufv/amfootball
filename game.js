@@ -25,7 +25,7 @@ function create () {
     
     this.add.image(0, 0, 'field').setOrigin(0, 0);
   
-    pA = this.physics.add.sprite(70, meio, 'PA').setScale(0.5,0.5).setOrigin(0, 0);
+    pA = this.physics.add.sprite(100, meio, 'PA').setScale(0.5,0.5).setOrigin(0, 0);
     pA.setCollideWorldBounds(true);
 }
 
