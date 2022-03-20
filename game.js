@@ -28,7 +28,7 @@ function create () {
   
     pA = this.physics.add.sprite(100, meio, 'PA').setScale(0.5,0.5).setOrigin(0, 0);
     pA.setCollideWorldBounds(true);
-    pB = this.physics.add.sprite(1024-200, meio, 'PB').setScale(0.5,0.5).setOrigin(0, 0);
+    pB = this.physics.add.sprite(1024-150, meio, 'PB').setScale(0.5,0.5).setOrigin(0, 0);
     pB.setCollideWorldBounds(true);
 
 }
