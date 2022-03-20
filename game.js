@@ -34,8 +34,6 @@ function create () {
 }
 
 function update() {
-asteroide.y = (asteroide.y+1) % phaserConfig.height;
-      }
       if (cursors.left.isDown) {
          pA.setVelocityX(-100);
       }
