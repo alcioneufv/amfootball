@@ -14,6 +14,7 @@ var game = new Phaser.Game(config);
 function preload() {
   this.load.image('field', 'assets/field.png');
   this.load.spritesheet('PA', 'assets/playerA.png', { frameWidth: 90, frameHeight: 90 });
+  this.load.spritesheet('PB', 'assets/playerB.png', { frameWidth: 90, frameHeight: 90 });
 }
 
 var cursors;
@@ -27,6 +28,9 @@ function create () {
   
     pA = this.physics.add.sprite(100, meio, 'PA').setScale(0.5,0.5).setOrigin(0, 0);
     pA.setCollideWorldBounds(true);
+    pB = this.physics.add.sprite(1024-100, meio, 'PB').setScale(0.5,0.5).setOrigin(0, 0);
+    pB.setCollideWorldBounds(true);
+
 }
 
 function update (){
