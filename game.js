@@ -17,6 +17,7 @@ function preload() {
 }
 
 var cursors;
+var meio = (494 - (90/2))/2
 
 function create () {
     
@@ -24,7 +25,7 @@ function create () {
     
     this.add.image(0, 0, 'field').setOrigin(0, 0);
   
-    pA = this.physics.add.sprite(10, 270, 'PA').setScale(0.5,0.5).setOrigin(0, 0);
+    pA = this.physics.add.sprite(30, meio, 'PA').setScale(0.5,0.5).setOrigin(0, 0);
     pA.setCollideWorldBounds(true);
 }
 
