@@ -23,3 +23,6 @@ function create () {
     
     this.add.image(0, 0, 'field').setOrigin(0, 0);
 }
+
+function update (){
+}
